@@ -166,6 +166,20 @@
 			"item": [
 				{
 					"name": "Get all products",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "71e0b6c2-a6a4-4993-b177-701b2b500a4c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "d535b1d2-0ad5-4617-b1bf-4e6366e6d589",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -683,24 +697,29 @@
 	],
 	"variable": [
 		{
+			"id": "52ee90db-a18a-47cd-aeba-50fb8d5a3134",
 			"key": "baseUrl",
 			"value": "https://valentinos-coffee.glitch.me",
 			"disabled": true
 		},
 		{
+			"id": "21c7274c-c24c-45da-8435-cea663633dc3",
 			"key": "apiKey",
 			"value": "ENTER A VALID API KEY"
 		},
 		{
+			"id": "48424bb5-fdc2-4a22-99c4-b59bdd73de12",
 			"key": "baseUrl",
 			"value": "https://valentinos-coffee.herokuapp.com",
 			"type": "string"
 		},
 		{
+			"id": "f682fe7d-1660-49ac-81e3-08093ee66ff8",
 			"key": "CustomerNameVariable",
 			"value": ""
 		},
 		{
+			"id": "e46aca4b-2533-4814-a0e7-c600c928ca61",
 			"key": "CustomerToken",
 			"value": ""
 		}
