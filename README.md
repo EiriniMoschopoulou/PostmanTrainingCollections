@@ -11,8 +11,7 @@ This repository contains a Postman collection designed for testing the API that 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Getting Started
 
@@ -32,3 +31,43 @@ To use this Postman collection, you need the following:
 
    ```bash
    git clone git@github.com:EiriniMoschopoulou/PostmanTrainingCollections.git
+2. Open Postman
+
+3. Import the Postman collection
+
+   In Postman, click on the "Import" button.
+   Select the 'Example API Testing' file located in the repository's root directory.
+
+
+
+4. You are now ready to use the collection to test the API.
+
+## Usage
+1. Open Postman.
+
+2.Navigate to the 'Example API Testing' in the Postman sidebar.
+
+3. You will find a list of requests grouped by folders, each corresponding to a specific API endpoint or functionality.
+
+4. Click on a request to open it and review the request details and parameters.
+
+5. Click the "Send" button to execute the request against the API.
+
+6. Postman will display the response, and any associated tests will automatically run to validate the response.
+
+7. Review the test results to ensure the API is behaving as expected.
+
+
+## Folder Structure
+The Postman collection is organized into the following folders:
+
+ - status: Get the status of the API.
+
+ - products: Contains requests and tests related to products-related endpoints.
+
+ - clients: Contains requests and tests related to clients-related endpoints.
+
+ - orders: Contains requests and tests related to order-related endpoints.
+
+
+   
