@@ -45,7 +45,7 @@ To use this Postman collection, you need the following:
 ## Usage
 1. Open Postman.
 
-2.Navigate to the 'Example API Testing' in the Postman sidebar.
+2. Navigate to the 'Example API Testing' in the Postman sidebar.
 
 3. You will find a list of requests grouped by folders, each corresponding to a specific API endpoint or functionality.
 
