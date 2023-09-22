@@ -15,7 +15,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "33f11f00-245f-45e7-ae6c-4fd29ae69029",
+								"id": "049da8a1-5451-48e5-8b41-9c2c4f235f26",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
@@ -99,6 +99,7 @@
 									"console.log(hobbies[1]);",
 									"console.log(typeof hobbies);",
 									"",
+									"",
 									""
 								],
 								"type": "text/javascript"
@@ -107,7 +108,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6072415a-0999-4d4a-ba81-b77d1dfebc66",
+								"id": "2e4a99ca-c952-4102-b437-01cfef7ff1f8",
 								"exec": [
 									"console.log(\"Hello from the pre-request script\");",
 									"console.clear();",
@@ -697,29 +698,29 @@
 	],
 	"variable": [
 		{
-			"id": "52ee90db-a18a-47cd-aeba-50fb8d5a3134",
+			"id": "43ee0ac2-508e-4d77-9dde-267d73c89dc7",
 			"key": "baseUrl",
 			"value": "https://valentinos-coffee.glitch.me",
 			"disabled": true
 		},
 		{
-			"id": "21c7274c-c24c-45da-8435-cea663633dc3",
+			"id": "fa036ca1-4dfd-4cad-b645-0edbd09695f4",
 			"key": "apiKey",
 			"value": "ENTER A VALID API KEY"
 		},
 		{
-			"id": "48424bb5-fdc2-4a22-99c4-b59bdd73de12",
+			"id": "14db5e97-44d5-4a57-bd6c-4955e1d98653",
 			"key": "baseUrl",
 			"value": "https://valentinos-coffee.herokuapp.com",
 			"type": "string"
 		},
 		{
-			"id": "f682fe7d-1660-49ac-81e3-08093ee66ff8",
+			"id": "4f695f8d-1299-41b9-9663-c091e53f1d2e",
 			"key": "CustomerNameVariable",
 			"value": ""
 		},
 		{
-			"id": "e46aca4b-2533-4814-a0e7-c600c928ca61",
+			"id": "6556745f-ad46-41c1-b2fa-2db20cee5a56",
 			"key": "CustomerToken",
 			"value": ""
 		}
