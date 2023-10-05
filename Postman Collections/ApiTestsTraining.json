@@ -495,7 +495,76 @@
 						"url": "{{baseUrl}}/orders",
 						"description": "Place a new order by providing customer details and ordered products"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "9bfe6d8e-fbc5-43a0-8bfd-56623fb6638b",
+							"name": "Create a new order",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"customerName\": \"{{$randomFullName}}\",\n  \"products\": [\n    {\n      \"id\": 2001,\n      \"quantity\": 1\n    },\n    {\n      \"id\": 2002,\n      \"quantity\": 3\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/orders"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"ac-EIYn8ErZoexYFz1W/hJuIJPdo4k\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 05 Oct 2023 16:11:14 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": \"QD3OFUQR9\",\n    \"clientId\": \"PBe4fbPiH\",\n    \"created\": \"2023-10-05T16:11:14.643Z\",\n    \"customerName\": \"Jared Quigley\",\n    \"products\": [\n        {\n            \"id\": 2001,\n            \"quantity\": 1\n        },\n        {\n            \"id\": 2002,\n            \"quantity\": 3\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Get all orders",
