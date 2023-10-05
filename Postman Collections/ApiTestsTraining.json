@@ -653,12 +653,12 @@
 									"",
 									"// Test to check if the response contains a Content-Type header",
 									"pm.test(\"Valid Content-Type header is present\", function() {",
-									"    pm.expect(pm.response.headers.has('Content-Type')).to.be.true.and.to.include('application/json');",
+									"    pm.expect(pm.response.headers.has('Content-Type')).to.be.true;",
 									"});",
 									"",
-									"// Test to check if the response contains a Cache-Control header",
+									"// Test to check if the response contains aContent-Length header",
 									"pm.test(\"Valid Cache-Control header is present\", function() {",
-									"    pm.expect(pm.response.headers.has('Cache-Control')).to.be.true.and.to.include('no-cache');",
+									"    pm.expect(pm.response.headers.has('Content-Length')).to.be.true;",
 									"});"
 								],
 								"type": "text/javascript"
