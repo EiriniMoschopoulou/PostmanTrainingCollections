@@ -458,7 +458,9 @@
 								"id": "85471839-6f0c-4fd4-af5d-149160cb7fed",
 								"exec": [
 									"var responseBody = pm.response.json();",
-									"pm.collectionVariables.set(\"CustomerNameVariable\", responseBody.customerName);"
+									"pm.collectionVariables.set(\"CustomerNameVariable\", responseBody.customerName);",
+									"",
+									"pm.collectionVariables.set(\"productID\", responseBody.products[0].id);"
 								],
 								"type": "text/javascript"
 							}
@@ -558,7 +560,14 @@
 							"script": {
 								"id": "bd87b506-ba7d-49bb-b24d-1fbdb70d72b0",
 								"exec": [
-									""
+									"let response = pm.response.json(); ",
+									"",
+									"",
+									"pm.test(\"Product Response has the expected properties\", function() {",
+									"    pm.expect(response.products[0].id).to.eql(parseInt(pm.collectionVariables.get('productID')))",
+									"",
+									"",
+									"})"
 								],
 								"type": "text/javascript"
 							}
@@ -598,7 +607,7 @@
 							"variable": [
 								{
 									"key": "orderId",
-									"value": "6JPLVMXUD"
+									"value": "{{orderid}}"
 								}
 							]
 						}
@@ -723,6 +732,10 @@
 			"key": "orderid",
 			"value": "",
 			"type": "string"
+		},
+		{
+			"key": "productID",
+			"value": ""
 		}
 	]
 }
