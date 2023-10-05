@@ -565,8 +565,9 @@
 									"",
 									"pm.test(\"Product Response has the expected properties\", function() {",
 									"    pm.expect(response.products[0].id).to.eql(parseInt(pm.collectionVariables.get('productID')))",
-									"",
-									"",
+									"    pm.expect(pm.response.text()).to.include(\"customerName\");",
+									"    pm.expect(pm.response.text()).to.include(\"clientId\");",
+									" ",
 									"})"
 								],
 								"type": "text/javascript"
