@@ -70,4 +70,12 @@ The Postman collection is organized into the following folders:
  - orders: Contains requests and tests related to order-related endpoints.
 
 
+## Github Actions
+This postman Repo is running through Githu actions 
+1. Just go to Actions tab
+2. Open the alreaady established workflow 'Automated API tests using Postman CLI'
+
+3. Click on re'run
+4. Or you can make a chnege to the collection and push --> This will trigger a new run
+
    
