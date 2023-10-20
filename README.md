@@ -12,6 +12,8 @@ This repository contains a Postman collection designed for testing the API that 
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 
+  
+
 
 ## Getting Started
 
