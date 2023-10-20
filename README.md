@@ -71,11 +71,10 @@ The Postman collection is organized into the following folders:
 
 
 ## Github Actions
-This postman Repo is running through Githu actions 
+This postman Repo is running through Github Actions 
 1. Just go to Actions tab
 2. Open the alreaady established workflow 'Automated API tests using Postman CLI'
-
-3. Click on re'run
-4. Or you can make a chnege to the collection and push --> This will trigger a new run
+3. Click on re-run on the last running job 
+4. Or you can make a change to the collection and push --> This will trigger a new run automatically
 
    
