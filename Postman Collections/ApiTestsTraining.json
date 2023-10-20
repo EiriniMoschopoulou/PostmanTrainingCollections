@@ -372,9 +372,14 @@
 								"id": "05939509-eee7-49df-9f7b-2c92825cb3df",
 								"exec": [
 									"var responseBody = pm.response.json();",
+									"",
 									"let tokenOfClient = responseBody.token;",
 									"pm.collectionVariables.set(\"CustomerToken\", tokenOfClient);",
-									""
+									"",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
 								],
 								"type": "text/javascript"
 							}
